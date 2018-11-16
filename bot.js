@@ -35,7 +35,7 @@ if (message.content.startsWith('3St')) {
 
   let channel = client.channels.get('511744532992229377');//NouNouDz#6720
 
-  channel .join()//NouNouDz#6720
+  channel.join()//NouNouDz#6720
   .then(connection => message.channel.send(`دخلت`))//NouNouDz#6720
   .catch(console.error);//NouNouDz#6720
   }
