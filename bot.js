@@ -2,13 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const developers = ['343743154429755392','511744532992229377'];
 
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity("If you can dream it you can do it",{type: 'LISTENING'})
-  client.user.setStatus("dnd")
-});
-
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
@@ -16,28 +9,33 @@ client.on('message', message => {
 if (message.content.startsWith('2Wt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
   client.user.setStatus("dnd")
-    message.channel.send(`${argresult} \` `)
+    message.channel.send(` ** Done. :white_check_mark: ** `)
 } else 
 if (message.content.startsWith('1Ls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
   client.user.setStatus("dnd")
-    message.channel.send(` ${argresult} \` `)
+    message.channel.send(` ** Done. :white_check_mark: ** `)
 } else 
 if (message.content.startsWith('3St')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/MeeRcY");
+  client.user.setGame(argresult, "https://www.twitch.tv/iitxbro");
   client.user.setStatus("dnd")
-   message.channel.send(`${argresult} \` `)
-  
+   message.channel.send(` ** Done. :white_check_mark: ** `)
+} else 
+if (message.content.startsWith('Mls')) {
+client.user.setActivity(argresult , {type:'PLAYING'});
+  client.user.setStatus("idle")
+    message.channel.send(` ** Done. :white_check_mark: ** `)
+
 }
-  client.on('message', message => {//NouNouDz#6720
-        if (!developers.includes(message.author.id)) return;//NouNouDz#6720
-  if (message.content === '..1') {//NouNouDz#6720
+  client.on('message', message => {//iiHouSSaM#9494
+        if (!developers.includes(message.author.id)) return;//iiHouSSaM#9494
+  if (message.content === '..1') {//iiHouSSaM#9494
 
-  let channel = client.channels.get('511744532992229377');//NouNouDz#6720
+  let channel = client.channels.get('511744532992229377');//iiHouSSaM#9494
 
-  channel.join()//NouNouDz#6720
-  .then(connection => console.log(`دخلت`))//NouNouDz#6720
-  .catch(console.error);//NouNouDz#6720
+  channel.join()//iiHouSSaM#9494
+  .then(connection => console.log(`????`))//iiHouSSaM#9494
+  .catch(console.error);//iiHouSSaM#9494
   }
 });
           
