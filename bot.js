@@ -35,8 +35,6 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 
   let channel = client.channels.get('513961255199834113');//iiHouSSaM#9494
 
-   message.channel.send(` ** Done. :white_check_mark: ** `)
-
   channel.join()//iiHouSSaM#9494
   .then(connection => console.log(`????`))//iiHouSSaM#9494
   .catch(console.error);//iiHouSSaM#9494
