@@ -32,6 +32,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
   if (message.content === '963') {//iiHouSSaM#9494
   
   let channel = client.channels.get('514641715651543041');//iiHouSSaM#9494
+//if (!channel) return generale.join() .then(connection => message.channel.send(` \` ** Done.:white_check_mark:  ** `));
 
   channel.join()//iiHouSSaM#9494
   .then(connection => console.log(`????`))//iiHouSSaM#9494
