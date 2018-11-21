@@ -30,7 +30,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
   client.on('message', message => {//iiHouSSaM#9494
         if (!developers.includes(message.author.id)) return;//iiHouSSaM#9494
   if (message.content === '963') {//iiHouSSaM#9494
-    message.channel.send(` ** Done. :white_check_mark: ** `)  
+  
   let channel = client.channels.get('514641715651543041');//iiHouSSaM#9494
 
   channel.join()//iiHouSSaM#9494
