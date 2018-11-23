@@ -45,7 +45,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 });
 client.on('message', message => {
     if (message.content.startsWith('1')) {
-        message.channel.send(`WelcoMe To ** Flix-Community. ** :tada: :heart: **`)
+        message.channel.send(`WelcoMe To ** Flix-Community.:tada: :heart: **`)
         message.delete()
     }
     });
