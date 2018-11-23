@@ -46,7 +46,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
     if (message.content.startsWith('-')) {
-        message.channel.send(`<:FlixHost:468341909752905728>**Welcome To Flix-Host Server**<:FlixHost:468341909752905728> `)
+        message.channel.send(`<:FlixHost:468341909752905728> ** __Welcome__ To __Flix-Community.__** <:FlixHost:468341909752905728> `)
         message.delete()
     }
     });
