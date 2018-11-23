@@ -25,7 +25,7 @@ if (message.content.startsWith('Hpl')) {
 client.user.setActivity(argresult , {type:'PLAYING'});
   client.user.setStatus("idle")
     message.channel.send(` ** Done. :white_check_mark: ** `)
-
+  
 }
   client.on('message', message => {//iiHouSSaM#9494
         if (!developers.includes(message.author.id)) return;//iiHouSSaM#9494
@@ -35,7 +35,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 
   let channel = client.channels.get('515417209267290132');//iiHouSSaM#9494
 
-
+    
   channel.join()//iiHouSSaM#9494
   .then(connection => console.log(`????`))//iiHouSSaM#9494
   .catch(console.error);//iiHouSSaM#9494
@@ -46,7 +46,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
     if (message.content.startsWith('-')) {
-        message.channel.send(`:FlixHost: **__Welcome__`` To ``__Flix-Host Server__** :FlixHost: `)
+        message.channel.send(`:FlixHost: **__Welcome__ `` To `` __Flix-Host Server__** :FlixHost: `)
         message.delete()
     }
     });
