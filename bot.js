@@ -41,10 +41,12 @@ client.user.setActivity(argresult , {type:'PLAYING'});
   .catch(console.error);//iiHouSSaM#9494
   }
 });
+
 client.on('guildMemberAdd', member => {
     if(member.guild.id !== '428690920246870016') return;
     setTimeout(() => {
         client.channels.get('485710163966296064').send(`${member} <<:FlixHost:515836756109819905>515836756109819905> ** __Welcome__\`To\`__Flix-Community.__** <<:FlixHost:515836756109819905>515836756109819905> .`);
     }, 1000);
-});          
+});   
+       
 client.login(process.env.BOT_TOKEN);
