@@ -29,23 +29,15 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 }
   client.on('message', message => {//iiHouSSaM#9494
         if (!developers.includes(message.author.id)) return;//iiHouSSaM#9494
-  if (message.content === '963') {//iiHouSSaM#9494
+  if (message.content === '963') {//iiHouSSaM#9494 
 
- let channel = client.channels.get('515786788078485515');//iiHouSSaM#9494
-if (!channel) return generale.join() .then(connection => message.channel.send(` \` ** Done.:white_check_mark:  ** `));  
+  let channel = client.channels.get('515786788078485515');//iiHouSSaM#9494
 
-   
+    
   channel.join()//iiHouSSaM#9494
   .then(connection => console.log(`????`))//iiHouSSaM#9494
   .catch(console.error);//iiHouSSaM#9494
   }
 });
 
-client.on('guildMemberAdd', member => {
-    if(member.guild.id !== '428690920246870016') return;
-    setTimeout(() => {
-        client.channels.get('485710163966296064').send(`${member} :FlixHost: ** __Welcome__\`To\`__Flix-Community.__** <:FlixHost: `);
-    }, 1000);
-});   
-       
 client.login(process.env.BOT_TOKEN);
