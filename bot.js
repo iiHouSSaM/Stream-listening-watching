@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const developers = ['343743154429755392','515417209267290132'];
+const developers = ['343743154429755392','515786788078485515'];
 
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -8,7 +8,7 @@ client.on('message', message => {
 
 if (message.content.startsWith('Hwt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
-  client.user.setStatus("dnd")
+  client.user.setStatus("idle")
     message.channel.send(` ** Done. :white_check_mark: ** `)
 } else 
 if (message.content.startsWith('Hls')) {
@@ -18,7 +18,7 @@ client.user.setActivity(argresult , {type:'LISTENING'});
 } else 
 if (message.content.startsWith('Hst')) {
   client.user.setGame(argresult, "https://www.twitch.tv/iitxbro");
-  client.user.setStatus("idle")
+  client.user.setStatus("dnd")
    message.channel.send(` ** Done. :white_check_mark: ** `)
 } else 
 if (message.content.startsWith('Hpl')) {
@@ -33,7 +33,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 
 //if (!channel) return generale.join() .then(connection => message.channel.send(` \` ** Done.:white_check_mark:  ** `));  
 
-  let channel = client.channels.get('515417209267290132');//iiHouSSaM#9494
+  let channel = client.channels.get('515786788078485515');//iiHouSSaM#9494
 
     
   channel.join()//iiHouSSaM#9494
@@ -45,7 +45,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 client.on('guildMemberAdd', member => {
     if(member.guild.id !== '428690920246870016') return;
     setTimeout(() => {
-        client.channels.get('485710163966296064').send(`${member} <<:FlixHost:515836756109819905>515836756109819905> ** __Welcome__\`To\`__Flix-Community.__** <<:FlixHost:515836756109819905>515836756109819905> .`);
+        client.channels.get('485710163966296064').send(`${member} <:FlixHost:515836756109819905> ** __Welcome__\`To\`__Flix-Community.__** <<:FlixHost:515836756109819905> `);
     }, 1000);
 });   
        
