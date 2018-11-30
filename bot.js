@@ -6,10 +6,20 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
+if (message.content.startsWith('Hwt')) {
+client.user.setActivity(argresult, {type:'WATCHING'});
+  client.user.setStatus("dnd")
+    message.channel.send(` ** Done. :white_check_mark: ** `)
+} else 
 if (message.content.startsWith('Hls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
   client.user.setStatus("idle")
     message.channel.send(` ** Done. :white_check_mark: ** `)
+} else 
+if (message.content.startsWith('Hst')) {
+  client.user.setGame(argresult, "https://www.twitch.tv/iitxbro");
+  client.user.setStatus("dnd")
+   message.channel.send(` ** Done. :white_check_mark: ** `)
 } else 
 if (message.content.startsWith('Hpl')) {
 client.user.setActivity(argresult , {type:'PLAYING'});
