@@ -1,20 +1,6 @@
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
-client.on('ready',async () => {
-console.log("Starting..");
-let g = client.guilds.get("428690920246870016");
-let c = g.channels.get("4519599123435880449");
-if(c.type === 'voice') {
-c.join();
-setInterval(() => {
-if(!g.me.voiceChannel) c.join();
-}, 1);
-} else {
-console.log("Failed To Join:\n The Channel Type isn't \"text\"");
-}
-});
+const developers = ['343743154429755392','519599123435880449'];
 
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -40,6 +26,22 @@ client.user.setActivity(argresult , {type:'PLAYING'});
   client.user.setStatus("idle")
     message.channel.send(` ** Done. :white_check_mark: ** `)
 
+}
+  client.on('message', message => {//iiHouSSaM#9494
+        if (!developers.includes(message.author.id)) return;//iiHouSSaM#9494
+  if (message.content === '963') {//iiHouSSaM#9494
+
+//if (!channel) return generale.join() .then(connection => message.channel.send(` \` ** Done.:white_check_mark:  ** `));  
+
+  let channel = client.channels.get('519599123435880449');//iiHouSSaM#9494
+
+
+  channel.join()//iiHouSSaM#9494
+  .then(connection => console.log(`????`))//iiHouSSaM#9494
+  .catch(console.error);//iiHouSSaM#9494
+  }
+});
+          
 });
 client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
@@ -50,7 +52,7 @@ if(message.author.id !== '343743154429755392') return;
     });
 client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
-    if (message.content.startsWith('عع')) {
+    if (message.content.startsWith('1')) {
         message.channel.send(`بخير الحمدالله`)
         message.delete()
     }
