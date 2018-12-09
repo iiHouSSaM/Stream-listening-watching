@@ -43,4 +43,18 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 });
           
 });
+client.on('message', message => {
+if(message.author.id !== '343743154429755392') return;
+    if (message.content.startsWith('غغ')) {
+        message.channel.send(`وعليكم السلام ورحمة الله تعالى و براكته`)
+        message.delete()
+    }
+    });
+client.on('message', message => {
+if(message.author.id !== '343743154429755392') return;
+    if (message.content.startsWith('1')) {
+        message.channel.send(`بخير الحمدالله`)
+        message.delete()
+    }
+    });
 client.login(process.env.BOT_TOKEN);
