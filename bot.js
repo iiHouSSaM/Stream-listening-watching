@@ -1,11 +1,11 @@
-```
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("428690920246870016");
-let c = g.channels.get("437836985659293707");
+let c = g.channels.get("4519599123435880449");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
@@ -56,4 +56,3 @@ if(message.author.id !== '343743154429755392') return;
     }
     });
 client.login(process.env.BOT_TOKEN);
-```
