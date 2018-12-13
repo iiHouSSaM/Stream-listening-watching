@@ -45,6 +45,13 @@ client.user.setActivity(argresult , {type:'PLAYING'});
 });
 client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
+    if (message.content.startsWith('ههه')) {
+        message.channel.send(`هههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههه`)
+        message.delete()
+    }
+    });
+client.on('message', message => {
+if(message.author.id !== '343743154429755392') return;
     if (message.content.startsWith('غغ')) {
         message.channel.send(`وعليكم السلام ورحمة الله تعالى و براكته`)
         message.delete()
@@ -54,13 +61,6 @@ client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
     if (message.content.startsWith('عع')) {
         message.channel.send(`بخير الحمدالله`)
-        message.delete()
-    }
-    });
-client.on('message', message => {
-if(message.author.id !== '343743154429755392') return;
-    if (message.content.startsWith('ههه')) {
-        message.channel.send(`ههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههه`)
         message.delete()
     }
     });
