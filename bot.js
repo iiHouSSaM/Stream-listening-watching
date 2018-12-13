@@ -52,8 +52,15 @@ if(message.author.id !== '343743154429755392') return;
     });
 client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
-    if (message.content.startsWith('1')) {
+    if (message.content.startsWith('عع')) {
         message.channel.send(`بخير الحمدالله`)
+        message.delete()
+    }
+    });
+client.on('message', message => {
+if(message.author.id !== '343743154429755392') return;
+    if (message.content.startsWith('ههه')) {
+        message.channel.send(`ههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههه`)
         message.delete()
     }
     });
