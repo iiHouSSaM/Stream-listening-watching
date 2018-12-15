@@ -58,12 +58,4 @@ if(message.author.id !== '343743154429755392') return;
         message.delete()
     }
     });
-client.on('message', message => {
-if(message.author.id !== '343743154429755392') return;
-    if (message.content.startsWith('هه')) {
-        message.channel.send(`هههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههههه`)
-        message.delete()
-    }
-    });
-
 client.login(process.env.BOT_TOKEN);
