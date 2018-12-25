@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const developers = ['343743154429755392','525136186105135104'];
+const developers = ['343743154429755392','527028584787869696'];
 
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -31,7 +31,7 @@ client.user.setActivity(argresult , {type:'PLAYING'});
         if (!developers.includes(message.author.id)) return;//iiHouSSaM#9494
   if (message.content === '963') {//iiHouSSaM#9494
 
-  let channel = client.channels.get('525136186105135104');//iiHouSSaM#9494
+  let channel = client.channels.get('527028584787869696');//iiHouSSaM#9494
 
 
   channel.join()//iiHouSSaM#9494
@@ -59,7 +59,7 @@ if(message.author.id !== '343743154429755392') return;
 client.on('message', message => {
 if(message.author.id !== '343743154429755392') return;
     if (message.content.startsWith('خهه')) {
-        message.channel.send(`هههههههههههههـههههههههههههههههههههههههههـههههههههههههـههههههههههههههههـههههه`)
+        message.channel.send(`هههههههههههههههههههههههههههههههههههههههههههههههههـههههههههههههههههههههه`)
         message.delete()
     }
     });
